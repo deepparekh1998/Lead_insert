@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgd"
+    tools:context=".SalesOrderInsertion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--    xmlns:tools="http://schemas.android.com/tools"-->
+
+        <!--    android:background="@drawable/bb"-->
+        <!--    tools:context=".LoginActivity">-->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/spinner_sales_customer"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:autofillHints="Select Customer"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/spinner_sales_customer">
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/edit_sales_orderdate"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:hint="@string/app_salesorder_date"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/ic_calendar_today_24"
+                    android:inputType="date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/edit_sales_expirydate"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:hint="@string/app_salesorder_expirydate"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/ic_calendar_today_24"
+                    android:inputType="date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_sales_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:autofillHints="Payment Term"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/spinner_sales_payment">
+
+                <Spinner
+                    android:id="@+id/spinner_sales_tags"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:autofillHints="Tags"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner_sales_division"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:autofillHints="Division"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/app_sales_customer_preference"
+                android:textColorHint="@color/black"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textSize="18sp"
+                android:id="@+id/edit_sales_customerpref"/>
+
+            <EditText
+                android:id="@+id/edit_sales_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/app_sales_note"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+                android:minLines="2"
+                android:maxLines="3"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sales_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:text="Cancel"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_sales_addProduct"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.32999998"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_sales_addProduct"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:text="Add Product"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_sales_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_sales_cancel"
+            app:layout_constraintTop_toTopOf="@+id/btn_sales_cancel"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

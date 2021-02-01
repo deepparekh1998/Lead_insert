@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lead_insert">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lead_insert">
+
+        <activity android:name=".LeadInsertion">
+
+        </activity>
+
+        <activity android:name=".LeadList">
+
+        </activity>
+
+        <activity android:name=".OpportunityInsertion">
+
+        </activity>
+
+        <activity android:name=".OpportunityList">
+
+        </activity>
+
+        <activity android:name=".OpportStatusChoice">
+
+        </activity>
+
+        <activity android:name=".SalesOrderInsertion">
+
+        </activity>
+
+        <activity android:name=".SalesOrderList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ProductDetailing">
+
+        </activity>
+
+        <activity android:name=".ProductList">
+
+        </activity>
+
+        <activity android:name=".QuotationInsertion">
+
+        </activity>
+
+        <activity android:name=".QuotationList">
+
+        </activity>
+        <activity android:name=".NotificationList">
+
+        </activity>
+
+
+    </application>
+
+</manifest>

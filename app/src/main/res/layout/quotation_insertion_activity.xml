@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_light_backgd"
+    tools:context=".QuotationInsertion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--    xmlns:tools="http://schemas.android.com/tools"-->
+
+        <!--    android:background="@drawable/bb"-->
+        <!--    tools:context=".LoginActivity">-->
+
+
+        <LinearLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_dark"
+            tools:ignore="MissingConstraints"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backarrowaddquot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_24"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/headquot"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_quotation_title"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/spinner_quotation_customer"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:autofillHints="Select Customer"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/spinner_quotation_customer">
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/edit_quotationdate"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:focusable="false"
+                    android:hint="@string/app_quotation_date"
+                    android:paddingStart="12dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/ic_calendar_today_24"
+                    android:inputType="date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp" />
+
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/edit_quotation_expirydate"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:hint="@string/app_quotation_expirydate"
+                    android:paddingStart="12dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/ic_calendar_today_24"
+                    android:inputType="date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_quotation_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:autofillHints="Payment Term"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/spinner_quotation_payment">
+
+                <Spinner
+                    android:id="@+id/spinner_quotation_tags"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:autofillHints="Tags"/>
+
+                <Spinner
+                    android:id="@+id/spinner_quotation_division"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:autofillHints="Division"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/app_sales_customer_preference"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:id="@+id/edit_quotation_customerpref"
+                android:paddingLeft="12dp" />
+
+            <EditText
+                android:id="@+id/edit_quotation_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/app_sales_note"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:minLines="2"
+                android:maxLines="5"
+                android:lines="4"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:paddingLeft="12dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_quotation_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:text="@string/app_cancel_button"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_quotation_addProduct"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.32999998"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_quotation_addProduct"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:text="@string/app_add_button"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_quotation_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_quotation_cancel"
+            app:layout_constraintTop_toTopOf="@+id/btn_quotation_cancel"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

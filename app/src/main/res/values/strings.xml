@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Lead_insert</string>
+    <string name="lead_title">Lead Insertion</string>
+
+    <string name="app_lead_list_title">Lead List</string>
+    <string name ="app_lead">Lead Description</string>
+    <string name="app_company">Company Name</string>
+    <string name="app_contact">Contact Name</string>
+    <string name="app_add1">Address Line 1</string>
+    <string name="app_add2">Address Line 2</string>
+    <string name="app_add3">Address Line 3</string>
+    <string name="app_pincode">Zipcode/Pincode</string>
+    <string name="app_email">Email</string>
+    <string name="app_fax">Fax Number</string>
+    <string name="app_phone">Phone Number</string>
+    <string name="app_mobile">Mobile Number</string>
+    <string name="app_job">Job Position</string>
+    <string name="app_note">Note</string>
+    <string name="app_cancel_button">Cancel</string>
+    <string name="app_save_button">Save</string>
+
+
+    <string name="invalid_company_name">Please Enter Valid Company Name</string>
+    <string name="invalid_contact_name">Please Enter Valid Contact Name</string>
+    <string name="invalid_mobile_number">Please Enter a Valid Mobile Number</string>
+    <string name="invalid_description">Please Provide Proper Description</string>
+    <string name="invalid_pincode">"Pincode Required "</string>
+    <string name="invalid_email">"Enter Valid Email "</string>
+    <string name="invalid_country">Select Country</string>
+    <string-array name="Country"></string-array>
+    <string name="invalid_state">Select State</string>
+    <string-array name="State_List"></string-array>
+
+    <string name="invalid_city">Select City</string>
+    <string-array name="City_List"></string-array>
+    <string name="invalid_sales">Select Sales</string>
+    <string-array name="Sales"></string-array>
+    <string name="invalid_products">Select Product</string>
+    <string-array name="Products"></string-array>
+    <string name="invalid_tags">Select Tags</string>
+    <string-array name="Tag"></string-array>
+    <string name="invalid_title">Select Title</string>
+    <string name="invalid_phone_number">Enter Valid  Phone Number</string>
+    <string-array name="Title_Item">
+        <item>Title</item>
+    </string-array>
+
+
+    <string name="app_leadlist">lead_list</string>
+
+    <string name="app_lead_list">Lead List</string>
+    <string name="app_search">Search Here</string>
+
+    <string name="app_lead_description">Lead Description</string>
+    <string name="app_lead_company">Company Name</string>
+    <string name="app_lead_contact">Contact Name</string>
+    <string name="app_lead_mobile">Mobile Number</string>
+
+
+    <string name="app_opportunity_title">Opportunity Insertion</string>
+    <string name="app_opportunity">Opportunity</string>
+    <string name="app_expected_revenue">Expected Revenue</string>
+    <string name="app_probability">Probability</string>
+    <string name="app_date">Date</string>
+
+    <string name="invalid_customer">Select Customer</string>
+    <string name="invalid_product">Select Product</string>
+    <string name="invalid_activitytype">Select Activity Type</string>
+    <string name="invalid_employeename">Select Employee Name</string>
+    <string name="invalid_salesteam">Select Sales Team</string>
+
+    <string name="app_opportunity_list_title">Opportunity</string>
+    <string name="app_startdate">Start Date</string>
+    <string name="app_enddate">End Date</string>
+
+    <string name="app_opportunity_description">Opportunity Description</string>
+    <string name="app_opportunity_customername">Customer Name</string>
+    <string name="app_opportunity_closedate">Expected ClosingDate</string>
+    <string name="app_opportunity_empname">Employee Name</string>
+    <string name="invalid_status">Select Status</string>
+    <string-array name="Status"></string-array>
+
+    <string name="app_status_type">Status Type</string>
+    <string name="app_opp_qualified">Qualified</string>
+    <string name="app_opp_won">Won</string>
+    <string name="app_opp_closed">Closed</string>
+
+
+    <string name="app_sales_title">Sales Order Insertion</string>
+    <string name="app_sales_list_title">Sales Order</string>
+    <string name="invalid_sales_customer">Select Customer</string>
+    <string name="app_salesorder_date">SalesOrder Date</string>
+    <string name="app_salesorder_expirydate">SalesExpiry Date</string>
+    <string name="invalid_payment">Payment Term</string>
+    <string name="invalid_sales_tags">Tags</string>
+    <string name="invalid_sales_division">Division</string>
+    <string name="app_sales_customer_preference">Customer Preference</string>
+    <string name="app_sales_note">Note</string>
+
+
+    <string name="app_product_title">Product Detailing Insertion</string>
+    <string name="app_product_description">Description</string>
+    <string name="app_product_quantity">Quantity</string>
+    <string name="app_product_unitprice">Unit Price</string>
+    <string name="app_total_amount">Total Amount</string>
+    <string name="app_qty_price">Qty * Price</string>
+    <string name="invalid_tax">Select Tax</string>
+
+    <string name="app_product_list_title">Product List</string>
+    <string name="app_sales_customer_name">Customer Name</string>
+    <string name="app_salesorder_no">SalesOrder No</string>
+    <string name="app_sales_payment">Payment</string>
+    <string name="app_sales_tags">Tags</string>
+    <string name="app_sales_division">Divisions</string>
+
+    <string name="app_product_name">Product Name</string>
+    <string name="app_product_tax">Tax</string>
+    <string name="app_total">Total</string>
+
+    <string name="app_quotation_title">Quotation Insertion</string>
+    <string name="app_quotation_date">Quotation Date</string>
+    <string name="app_quotation_expirydate">Expiration Date</string>
+
+
+    <string name="app_quotation_list_title">Quotation</string>
+    <string name="app_quot_customer_name">Customer Name</string>
+    <string name="app_quotorder_date">Quotation Date</string>
+    <string name="app_quotorder_no">Quotation No</string>
+    <string name="app_quot_payment">Payment Terms</string>
+    <string name="app_quot_tags">Tags</string>
+    <string name="app_quot_division">Divisions</string>
+    <string name="app_add_button">Add Product</string>
+
+
+    <string name="app_notify_title">Notification</string>
+    <string name="app_notify_msg">Notification Message</string>
+    <string name="app_date_time">Date-Time</string>
+    <string name="app_notify_new">New</string>
+
+
+
+</resources>
